@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blackjack-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      chapter: services
+  template:
+    metadata:
+      labels:
+        chapter: services
+    spec:
+      containers:
+        - name: blackjack-container
+          image: madmanmayson/blackjack
+          ports:
+            - containerPort: 8080
