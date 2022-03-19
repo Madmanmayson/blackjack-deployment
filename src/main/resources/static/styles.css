@@ -1,0 +1,84 @@
+.column-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#debug_display{
+    display: none;
+}
+
+.center-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+}
+
+img{
+    width: 100px;
+    height: 140px;
+    margin: 0px 6px;
+    border-radius: 6px;
+}
+
+.button-area {
+    margin-top: 24px;
+}
+
+button{
+    padding: 8px 24px;
+    margin: 0px 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    background-color: #008CBA;
+    color: white;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 16px;
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score-area{
+    padding: 0px 50px;
+}
+
+.results{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.scoore{
+    font-size: 1.2rem;
+}
+
+body{
+    background-color: #3CB043;
+}
+
+h1{
+    color: #cccc00;
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-top: 0px;
+    color: white;
+}

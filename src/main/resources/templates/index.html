@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Play Blackjack!</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Debug Info -->
+    <div id="debug_display">
+        <p>Deck Id: <span id="deck_id"></span></p>
+        <p>Latest Error: <span id="error_info"></span></p>
+    </div>
+
+
+    <div class="column-flex">
+        <div>
+            <h1 class="center-text">Let's Play some Blackjack!</h1>
+            <h3 class="center-text">Totally not a scamming AI that somehow seems to win every time...</h3>
+        </div>
+
+        <!-- Dealer -->
+        <div>
+            <h5 class="title">Dealer</h5>
+            <div id="dealer-hand-display" class="center-flex"></div>
+        </div>
+
+        <!-- Scoring area? -->
+        <div id="game-results" style="display: none;">
+            <h5 class="title">Game Results</h5>
+
+            <div class="center-flex">
+                <div class="column-flex score-area">
+                    <span class="center-text">Dealer Hand Total:</span>
+                    <span id="dealer-score" class="score center-text"></span>
+                </div>
+                <p id="winner" class="results"></p>
+                <div class="column-flex score-area">
+                    <span class="center-text">Player Hand Total:</span>
+                    <span id="player-score" class="score center-text"></span>
+                </div>
+            </div>
+
+            <div class="center-flex">
+                <button id="new-game-button">Play Again!</button>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div>
+            <h5 class="title">Player</h5>
+            <div id="player-hand-display" class="center-flex"></div>
+        </div>
+
+        <!-- Player Controls -->
+        <div id="action-bar">
+            <div class="center-flex button-area">
+                <button id="hit-button">Hit!</button>
+                <button id="stay-button">Stay!</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="api.js"></script>
+<script>start();</script>
+</html>
